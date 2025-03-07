@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %} Starshop {% endblock
+e%}
+{% block body %}
+<h1>Starshop:your monopoly-busting option for Starship parts!</h1>
+
+
+<div>
+    Browse {{ numberOfStarships*10 }} starships!
+
+
+    {% if numberOfStarships>100 %}
+        that's a lot of starships!
+    {% endif %}
+
+
+    <div>
+        <h2>
+            Here we have my shipp<br/>
+           name: {{ myShip.name|upper }}
+        </h2>
+    </div>
+</div>
+{% endblock %}
